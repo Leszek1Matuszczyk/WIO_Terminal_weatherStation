@@ -69,7 +69,7 @@ void setup() {
   lcd.println();
   lcd.print("Github:");
   lcd.println();
-  lcd.print("link");
+  lcd.print("https://github.com/Leszek1Matuszczyk/WIO_Terminal_weatherStation");
   delay(5000);
   lcd.fillScreen(TFT_WHITE);
   lcd.fillRect(0, 0, 300, 200, TFT_BLACK);
