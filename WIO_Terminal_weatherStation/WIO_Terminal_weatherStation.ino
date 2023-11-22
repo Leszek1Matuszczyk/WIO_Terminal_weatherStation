@@ -67,9 +67,13 @@ void setup() {
   lcd.setFreeFont(FF1);
   lcd.print("Simple weather station using BME280");
   lcd.println();
-  lcd.print("Github:");
+  lcd.print("Github:    ");
   lcd.println();
-  lcd.print("https://github.com/Leszek1Matuszczyk/WIO_Terminal_weatherStation");
+  lcd.print("github.com/");
+  lcd.println();
+  lcd.print("Leszek1Matuszczyk/");
+  lcd.println();
+  lcd.print("/WIO_Terminal_weatherStation");
   delay(5000);
   lcd.fillScreen(TFT_WHITE);
   lcd.fillRect(0, 0, 300, 200, TFT_BLACK);
