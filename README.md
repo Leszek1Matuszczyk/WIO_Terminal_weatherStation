@@ -11,7 +11,7 @@ This Arduino project utilizes the WIO Terminal, featuring a built-in LCD screen 
 
 - **Real-time Weather Data:** The WIO Terminal collects data from the BME280 sensor to provide accurate and up-to-date information on the current weather conditions.
 
-- **Visual Representation:** The project visualizes the weather data through a bar chart displayed on the WIO Terminal's LCD screen. Each bar represents a different weather parameter, allowing for an intuitive understanding of the weather state.
+- **Visual Representation:** The project visualizes the weather data through a line chart displayed on the WIO Terminal's LCD screen. Each line represents a different weather parameter, allowing for an intuitive understanding of the weather state.
 
 - **Temperature, Pressure, Altitude, and Humidity:** The weather station monitors and displays essential weather parameters, including temperature, atmospheric pressure, altitude, and humidity.
 
