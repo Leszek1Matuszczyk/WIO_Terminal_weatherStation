@@ -28,9 +28,9 @@ struct Val {
 };
 Val tempV, pressV, altiV, humidV;
 
-// Variables to control the timing of different actions
+// Variable to control the timing of different actions
 long int time = 0;
-long int time1 = 0;
+
 
 // Function to draw a bar chart with a line for a given value
 int chart1(Val line0, Val line1, Val line2, Val line3, int positionX, int positionY, int sizeX, int sizeY, uint32_t background) {
@@ -76,14 +76,17 @@ void setup() {
   lcd.print("/WIO_Terminal_weatherStation");
   delay(5000);
   lcd.fillScreen(TFT_WHITE);
-  lcd.fillRect(0, 0, 300, 200, TFT_BLACK);
+  lcd.fillRect(0, 0, 320, 200, TFT_BLACK);
   Serial.begin(9600);
   if (!Sensor.init()) {
     Serial.println("Device error!");
   }
+  time=millis();
 }
 
 void loop() {
+  if(time==millis())
+{
   // Read sensor values
   temp = Sensor.getTemperature();
   pressure = Sensor.getPressure();
@@ -112,7 +115,7 @@ void loop() {
   humidV.color = TFT_BLUE;
 
   // Draw the chart on the LCD
-  chart1(tempV, pressV, altiV, humidV, 0, 0, 300, 200, TFT_BLACK);
+  chart1(tempV, pressV, altiV, humidV, 0, 0, 320, 200, TFT_BLACK);
 
   // Print sensor values to serial monitor
   Serial.println(tempV.line);
@@ -143,6 +146,6 @@ void loop() {
   lcd.print("H: ");
   lcd.print(humidity);
 
-  // Delay for one second
-  delay(1000);
+  time=millis()+1000;
+}
 }
