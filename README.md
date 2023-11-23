@@ -4,7 +4,7 @@ This Arduino project utilizes the WIO Terminal, featuring a built-in LCD screen 
 
 ## Hardware Requirements
 
-- **WIO Terminal:** A compact and powerful development board with a built-in LCD screen and various built-in sensors, including the BME280.
+- **WIO Terminal:** A compact and powerful development board with a built-in LCD screen and various built-in sensors.
 - **BME280 Sensor:** A sensor measuring temperature, pressure, and humidity.
 
 ## Project Features
